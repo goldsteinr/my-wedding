@@ -1,22 +1,13 @@
 {
-  "name": "npm-build-boilerplate",
-  "version": "1.2.0",
-  "description": "A set of common build tasks written with npm scripts.",
-  "author": "Damon Bauer <hello@damonbauer.me>",
+  "name": "my-wedding",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Ricardo Goldstein <goldstein.ricardo@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/damonbauer/npm-build-boilerplate"
+    "url": ""
   },
-  "bugs": "https://github.com/damonbauer/npm-build-boilerplate/issues",
-  "keywords": [
-    "npm",
-    "scripts",
-    "npm scripts",
-    "watch",
-    "minify",
-    "compress"
-  ],
   "scripts": {
     "clean": "rimraf dist/{css/*,js/*,images/*}",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
