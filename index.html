@@ -50,14 +50,14 @@
   </div>
   <div class="container">
     <h2>RSVP</h2>
-    <form action="https://formspree.io/goldstein.ricardo@gmail.com" method="POST">
+    <form netlify name="RSVP" method="POST">
       <div class="row">
         <input name="Nome" class="column" type="text" placeholder="Nome" required>
         <input name="Sobrenome" class="column" type="text" placeholder="Sobrenome" required>
       </div>
       <div class="row">
         <small>Além de você, quantos convidados a mais irão?</small>
-        <select id="ageRangeField" required>
+        <select name="Convidados" required>
           <option value="0" selected>Apenas eu</option>
           <option value="1">+ 1</option>
           <option value="2">+ 2</option>
@@ -70,9 +70,6 @@
         <textarea name="Mensagem aos noivos:" id="" cols="30" rows="10" placeholder="Mensagem aos noivos"></textarea>
       </div>
       <div class="row">
-        <input type="hidden" name="_next" value="/thanks.html" />
-        <input type="hidden" name="_subject" value="Novo convidado confirmado!" />
-        <input type="hidden" name="_cc" value="dtndenise@gmail.com" />
         <button type="submit">Confirmar presença!</button>
       </div>
     </form>
