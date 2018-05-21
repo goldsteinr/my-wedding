@@ -3,18 +3,28 @@
 @import 'variables';
 @import 'utilities';
 
+$wedding-green: #82cac1;
 
 h1 {
   font-family: 'Tangerine', cursive;
+  text-align: center;
 }
-
+body {
+  padding-top: 50px;
+}
 .menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   list-style: none;
-  padding: 10px 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
   &__icon {
     font-size: 1.5em;
     i, span {
@@ -30,15 +40,34 @@ h1 {
     width: 100%;
     margin: 0;
     padding: 10px 0;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid #fff;
     display: none;
+    background: $wedding-green;
   }
   &__item-link {
-    color: #656464;
+    color: #fff;
   }
   &.opened {
     .menu__item {
       display: inline-block;
     }
+  }
+}
+
+.when-where {
+  text-align: center;
+  p {
+    margin: 0;
+  }
+}
+
+.title {
+  h2 {
+    text-align: center;
+  }
+  img {
+    width: 50%;
+    max-width: 200px;
+    display: inline-block;
   }
 }
