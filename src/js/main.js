@@ -1,6 +1,6 @@
 (function () {
-  var doc = document.documentElement;
-
-  doc.classList.remove('no-js');
-  doc.classList.add('js');
+  var menu = document.querySelector('.js-menu');
+  menu.addEventListener('click', function () {
+    menu.classList.toggle('opened');
+  });
 }());
