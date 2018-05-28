@@ -8,12 +8,17 @@ $wedding-green: #82cac1;
 h1 {
   font-family: 'Great Vibes', cursive, sans-serif;
   text-align: center;
-  text-shadow: 3px 2px #000;
+  text-shadow: 3px 2px rgba(0,0,0,.3);
 }
-
+.cursive {
+  font-family: 'Great Vibes', cursive, sans-serif;
+  text-align: center;
+  letter-spacing: 0;
+}
 body {
   font-family: 'Advent Pro', sans-serif;
   letter-spacing: 1px;
+  overflow-x: hidden;
 }
 header {
   position: fixed;
@@ -88,6 +93,10 @@ header {
   bottom: 10px;
 }
 
+.leaves-behind {
+  position: relative;
+  z-index: 5;
+}
 .intro {
   background: url('../images/casal.jpg');
   background-position: center;
@@ -119,13 +128,118 @@ header {
     letter-spacing: 1px;
   }
 }
+h2.cursive {
+  font-size: 3em;
+}
 .when-where {
   text-align: center;
+  margin: 5% 0;
   p {
     margin: 0;
+    font-size: 1.2em;
+  }
+  .address {
+    margin-bottom: 25px;
   }
 }
-
+.madrinhas-padrinhos {
+  margin: 2em auto;
+}
+.card-wrapper {
+  flex-wrap: wrap;
+  display: flex;
+}
+.card {
+  display: flex;
+  flex: 1;
+  flex-basis: 48%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 3px 23px -4px rgba(0,0,0,0.1);
+  border: 1px solid #efefef;
+  padding: 2em;
+  margin: 10px;
+  h3 {
+    letter-spacing: 1px;
+  }
+  .img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  &.marcela .img {
+    background: url('../images/marcela.jpeg');
+    background-size: cover;
+  }
+  &.edinho .img {
+    background: url('../images/edinho.jpeg');
+    background-size: cover;
+  }
+  &.lobolf .img {
+    background: url('../images/lobolf.jpeg');
+    background-size: cover;
+  }
+  &.david .img {
+    background: url('../images/david.jpeg');
+    background-size: cover;
+  }
+  &.marina .img {
+    background: url('../images/marina.jpeg');
+    background-size: cover;
+  }
+  &.gabriel .img {
+    background: url('../images/gabriel.jpeg');
+    background-size: cover;
+  }
+  &.natalia .img {
+    background: url('../images/natalia.jpeg');
+    background-size: cover;
+  }
+  &.fernando .img {
+    background: url('../images/fernando.jpeg');
+    background-size: cover;
+  }
+  &.breno .img {
+    background: url('../images/breno.jpeg');
+    background-size: cover;
+  }
+  &.bia .img {
+    background: url('../images/bia.jpeg');
+    background-size: cover;
+  }
+  &.priscila .img {
+    background: url('../images/priscila.jpeg');
+    background-size: cover;
+  }
+  &.phil .img {
+    background: url('../images/philzinho.jpeg');
+    background-size: cover;
+  }
+  &.bia .img {
+    background: url('../images/bia.jpeg');
+    background-size: cover;
+  }
+  &.rafael .img {
+    background: url('../images/rafael.jpeg');
+    background-size: cover;
+  }
+  &.joana .img {
+    background: url('../images/joana.jpeg');
+    background-size: cover;
+  }
+  &.juliana .img {
+    background: url('../images/juliana.jpeg');
+    background-size: cover;
+  }
+  &.brunno .img {
+    background: url('../images/brunno.jpeg');
+    background-size: cover;
+  }
+}
 .title {
   h2 {
     text-align: center;
@@ -134,5 +248,32 @@ header {
     width: 50%;
     max-width: 200px;
     display: inline-block;
+  }
+}
+
+.rsvp {
+  letter-spacing: 1px;
+  margin-bottom: 5%;
+  font-size: 1.1em;
+  form {
+    max-width: 800px;
+    padding: 2em;
+    margin: 15px auto;
+  }
+  .rsvp-button {
+    font-size: 1.1em;
+    text-transform: inherit;
+    transition: all .4s;
+    width: 100%;
+
+  }
+}
+
+.button--green {
+  background: $wedding-green;
+  border-color: $wedding-green;
+  text-transform: inherit;
+  &:hover {
+    background: darken($wedding-green, 10%);
   }
 }
