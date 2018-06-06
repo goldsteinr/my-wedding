@@ -116,6 +116,9 @@ header {
   background-size: cover;
   color: #fff;
   height: 100vh;
+  @media screen and (min-width: 769px){
+    background-attachment: fixed;
+  }
   .bg {
     display: flex;
     height: 100%;
