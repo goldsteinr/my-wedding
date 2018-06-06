@@ -35,10 +35,6 @@ header {
   z-index: 10;
   background: white;
   box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.18);
-  @media screen and (min-width: 769px){
-    background: transparent;
-    box-shadow: none;
-  }
 }
 .menu {
   display: flex;
@@ -80,15 +76,9 @@ header {
       border-bottom: none;
       width: auto;
     }
-    &:active {
-      border-bottom: 1px solid #fff;
-    }
   }
   &__item-link {
     color: #656464;
-    @media screen and (min-width: 769px){
-      color: #fff;
-    }
   }
   &.opened {
     .menu__item {
@@ -107,9 +97,6 @@ header {
 .top-leaves {
   right: -10px;
   top: 50px;
-  @media screen and (min-width: 769px){
-    top: 10px;
-  }
 }
 .bottom-leaves {
   left: -10px;
@@ -190,8 +177,11 @@ h2.cursive {
   border-radius: 5px;
   box-shadow: 0px 3px 23px -4px rgba(0,0,0,0.1);
   border: 1px solid #efefef;
-  padding: 2em;
   margin: 10px;
+  padding: 1em;
+  @media screen and (min-width: 769px){
+    padding: 2em;
+  }
   h3 {
     letter-spacing: 1px;
     text-align: center;
@@ -328,6 +318,37 @@ h2.cursive {
   }
 }
 
+.family {
+  margin-bottom: 10%;
+  &__column.column {
+    display: flex;
+    flex-direction: column;
+    &.left {
+      justify-content: flex-start;
+      align-items: flex-start;
+      transform: rotate(-10deg);
+    }
+    &.right {
+      justify-content: flex-end;
+      align-items: flex-end;
+      transform: rotate(10deg);
+    }
+  }
+  &__pic {
+    width: 100%;
+    max-width: 670px;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-size: 2.8em;
+    margin-top: 0!important;
+    margin-bottom: 0;
+    @media screen and (min-width: 769px){
+      font-size: 3.5em;
+      margin-bottom: 0;
+    }
+  }
+}
 .guest-1,
 .guest-2,
 .guest-3,
