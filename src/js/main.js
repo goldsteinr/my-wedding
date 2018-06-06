@@ -24,7 +24,7 @@
       swal({
         type: 'success',
         title: 'Obrigado!',
-        text: 'Sua presença foi confirmada.',
+        text: 'Sua presença foi confirmada!',
         showConfirmButton: false,
         timer: 3000
       });
