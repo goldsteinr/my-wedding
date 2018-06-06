@@ -7,7 +7,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Great+Vibes" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Great+Vibes" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/sweetalert2@7.22.0/dist/sweetalert2.css">
   <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
@@ -44,24 +45,24 @@
       </div>
     </div>
   </section>
-  <!-- <section class="bride-groom leaves-behind">
+  <section class="bride-groom-family leaves-behind">
     <div class="container">
       <div class="row">
         <div class="column">
           <div class="card">
-            <img src="dist/images/groom.jpg" width="350" alt="">
+            <img src="dist/images/naruto.jpeg" width="350" alt="">
             <h3>Ricardo Goldstein</h3>
           </div>
         </div>
         <div class="column">
           <div class="card">
-            <img src="dist/images/bride.jpg" width="350" alt="">
+            <img src="dist/images/goldstein.jpeg" width="350" alt="">
             <h3>Denise Naruto</h3>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <div class="when-where leaves-behind" id="where">
     <div class="row">
       <div class="column">
@@ -202,50 +203,51 @@
       </div>
     </div>
     <div class="row">
-      <ul class="card-wrapper">
-        <li class="card">
-          <img src="dist/images/italia.jpg" width="350" alt="">
-          <p>Viagem para Itália</p>
-          <p>
-            <small>5 unidades de R$500,00</small>
-          </p>
-          <a href="https://pag.ae/bgyJ1QN" class="button button--green">Dar presente!</a>
-        </li>
-        <li class="card">
-          <img src="dist/images/italia.jpg" width="350" alt="">
-          <p>Viagem para Itália</p>
-          <p>
-            <small>5 unidades de R$500,00</small>
-          </p>
-          <a href="https://pag.ae/bgyJ1QN" class="button button--green">Dar presente!</a>
-        </li>
-        <li class="card">
-          <img src="dist/images/italia.jpg" width="350" alt="">
-          <p>Viagem para Itália</p>
-          <p>
-            <small>5 unidades de R$500,00</small>
-          </p>
-          <a href="https://pag.ae/bgyJ1QN" class="button button--green">Dar presente!</a>
-        </li>
-        <li class="card">
-          <img src="dist/images/italia.jpg" width="350" alt="">
-          <p>Viagem para Itália</p>
-          <p>
-            <small>5 unidades de R$500,00</small>
-          </p>
-          <a href="https://pag.ae/bgyJ1QN" class="button button--green">Dar presente!</a>
-        </li>
-      </ul>
-    </div>
-    <div class="row">
-      <div class="column">
+      <div class="column pay-anything">
         <p>Se quiser poder escolher qualquer valor!</p>
-        <a href="https://pag.ae/bmx7SX2" class="button">
-          Pagar qualquer coisa!
+        <a href="https://pag.ae/bmx7SX2" class="button button--green-outline">
+          Escolher valor!
         </a>
       </div>
     </div>
+    <div class="row">
+      <ul class="card-wrapper">
+        <li class="card">
+          <img src="dist/images/italia.jpg" width="350" alt="">
+          <h4>Viagem para Itália</h4>
+          <p>
+            <small>5 unidades de R$500,00</small>
+          </p>
+          <a href="https://pag.ae/bgyJ1QN" class="button button--green-outline">Dar presente!</a>
+        </li>
+        <li class="card">
+          <img src="dist/images/italia.jpg" width="350" alt="">
+          <h4>Viagem para Itália</h4>
+          <p>
+            <small>5 unidades de R$500,00</small>
+          </p>
+          <a href="https://pag.ae/bgyJ1QN" class="button button--green-outline">Dar presente!</a>
+        </li>
+        <li class="card">
+          <img src="dist/images/italia.jpg" width="350" alt="">
+          <h4>Viagem para Itália</h4>
+          <p>
+            <small>5 unidades de R$500,00</small>
+          </p>
+          <a href="https://pag.ae/bgyJ1QN" class="button button--green-outline">Dar presente!</a>
+        </li>
+        <li class="card">
+          <img src="dist/images/italia.jpg" width="350" alt="">
+          <h4>Viagem para Itália</h4>
+          <p>
+            <small>5 unidades de R$500,00</small>
+          </p>
+          <a href="https://pag.ae/bgyJ1QN" class="button button--green-outline">Dar presente!</a>
+        </li>
+      </ul>
+    </div>
   </div>
+  <hr>
   <section class="rsvp" id="rsvp">
     <div class="container leaves-behind">
       <form netlify name="RSVP" method="POST" netlify-honeypot="bot-field" class="js-rsvp card">
@@ -266,29 +268,50 @@
         <div class="row">
           <div class="column">
             <small>Além de você, quantos convidados a mais irão?</small>
-            <select name="Convidados" required>
+            <select name="Convidados" class="js-guests" required>
               <option value="0" selected>Apenas eu</option>
               <option value="1">+ 1</option>
               <option value="2">+ 2</option>
               <option value="3">+ 3</option>
               <option value="4">+ 4</option>
-              <option value="5">+ 5</option>
             </select>
           </div>
         </div>
         <div class="row">
+          <div class="column guest guest-1">
+            <small>Convidado 1</small>
+            <input name="Nome do convidado 1" type="text" placeholder="Nome completo">
+          </div>
+          <div class="column guest guest-2">
+            <small>Convidado 2</small>
+            <input name="Nome do convidado 2" type="text" placeholder="Nome completo">
+          </div>
+        </div>
+        <div class="row">
+          <div class="column guest guest-3">
+            <small>Convidado 3</small>
+            <input name="Nome do convidado 3" type="text" placeholder="Nome completo">
+          </div>
+          <div class="column guest guest-4">
+            <small>Convidado 4</small>
+            <input name="Nome do convidado 4" type="text" placeholder="Nome completo">
+          </div>
+        </div>
+        <hr>
+        <div class="row">
           <div class="column">
-            <textarea name="Mensagem aos noivos" cols="30" rows="10" placeholder="Mensagem aos noivos"></textarea>
+            <textarea name="Mensagem aos noivos" cols="30" rows="30" placeholder="Mensagem aos noivos"></textarea>
           </div>
         </div>
         <div class="row">
           <div class="column">
-            <button type="submit" class="rsvp-button">Confirmar presença</button>
+            <button type="submit" class="rsvp-button button--green">Confirmar presença</button>
           </div>
         </div>
       </form>
     </div>
   </section>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
   <script src="dist/js/app.min.js"></script>
 </body>
 

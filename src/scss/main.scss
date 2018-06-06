@@ -5,6 +5,12 @@
 
 $wedding-green: #82cac1;
 
+hr {
+  width: 100%;
+}
+textarea {
+  min-height: 9.5rem;
+}
 h1 {
   font-family: 'Great Vibes', cursive, sans-serif;
   text-align: center;
@@ -16,9 +22,10 @@ h1 {
   letter-spacing: 0;
 }
 body {
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
   overflow-x: hidden;
+  font-size: 1.2em;
 }
 header {
   position: fixed;
@@ -26,7 +33,12 @@ header {
   left: 0;
   width: 100%;
   z-index: 10;
-  background: transparent;
+  background: white;
+  box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.18);
+  @media screen and (min-width: 769px){
+    background: transparent;
+    box-shadow: none;
+  }
 }
 .menu {
   display: flex;
@@ -56,20 +68,27 @@ header {
   &__item {
     text-align: center;
     margin: 0 20px;
-    padding: 10px 0 5px 0;
-
+    padding: 10px 0 10px 0;
+    color: #656464;
     display: none;
-    background: $wedding-green;
+    background: transparent;
+    border-bottom: 1px solid rgba(#656464, .1);
+    width: 100%;
     @media screen and (min-width: 769px) {
       display: inline-block;
       background: transparent;
+      border-bottom: none;
+      width: auto;
     }
     &:active {
       border-bottom: 1px solid #fff;
     }
   }
   &__item-link {
-    color: #fff;
+    color: #656464;
+    @media screen and (min-width: 769px){
+      color: #fff;
+    }
   }
   &.opened {
     .menu__item {
@@ -82,11 +101,15 @@ header {
   position: fixed;
   z-index: 2;
   width: 25%;
+  min-width: 140px;
 }
 
 .top-leaves {
   right: -10px;
-  top: 10px;
+  top: 50px;
+  @media screen and (min-width: 769px){
+    top: 10px;
+  }
 }
 .bottom-leaves {
   left: -10px;
@@ -118,9 +141,12 @@ header {
 
   }
   h1 {
-    font-size: 6em;
+    font-size: 4.5em;
     margin-bottom: 10px;
     line-height: 1;
+    @media screen and (min-width: 769px){
+      font-size: 6em;
+    }
   }
   h2 {
     font-size: 2em;
@@ -129,11 +155,15 @@ header {
   }
 }
 h2.cursive {
-  font-size: 3em;
+  font-size: 4em;
 }
 .when-where {
   text-align: center;
-  margin: 5% 0;
+  padding: 5% 0;
+  background: white;
+  @media screen and (min-width: 769px){
+    background:transparent;
+  }
   p {
     margin: 0;
     font-size: 1.2em;
@@ -164,6 +194,10 @@ h2.cursive {
   margin: 10px;
   h3 {
     letter-spacing: 1px;
+    text-align: center;
+  }
+  h4 {
+    margin-top: 15px;
   }
   .img {
     border-radius: 50%;
@@ -264,16 +298,42 @@ h2.cursive {
     font-size: 1.1em;
     text-transform: inherit;
     transition: all .4s;
-    width: 100%;
-
+    display: block;
+    margin: 10px auto;
+    line-height: 0;
+    padding: 2em;
   }
 }
-
+.column.pay-anything {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
 .button--green {
   background: $wedding-green;
   border-color: $wedding-green;
   text-transform: inherit;
+  line-height: 0;
+  padding: 1.8em;
+  font-size: 1.2em;
+  &-outline {
+    background: transparent;
+    color: $wedding-green;
+    border-color: $wedding-green;
+  }
   &:hover {
     background: darken($wedding-green, 10%);
+  }
+}
+
+.guest-1,
+.guest-2,
+.guest-3,
+.guest-4 {
+  display: none!important;
+  &.show {
+    display: block!important;
   }
 }
