@@ -26,6 +26,7 @@ body {
   letter-spacing: 1px;
   overflow-x: hidden;
   font-size: 1.2em;
+  overflow-x: hidden;
 }
 header {
   position: fixed;
@@ -111,7 +112,6 @@ header {
   background: url('../images/casal.jpg');
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   -webkit-filter: grayscale(20%);
   background-size: cover;
   color: #fff;
