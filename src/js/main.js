@@ -4,6 +4,12 @@
   menu.addEventListener('click', function () {
     menu.classList.toggle('opened');
   });
+  window.sr = ScrollReveal();
+  sr.reveal('.reveal');
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    offset: 50,
+    speed: 800,
+  });
   selectGuests.addEventListener('change', function(e) {
     var numberGuests = parseInt(selectGuests.value);
     var guests = document.querySelectorAll('.guest');

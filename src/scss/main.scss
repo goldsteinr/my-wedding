@@ -163,12 +163,17 @@ h2.cursive {
     margin-bottom: 25px;
   }
 }
+.subtitle {
+  text-align: center;
+}
 .madrinhas-padrinhos {
   margin: 2em auto;
 }
 .card-wrapper {
   flex-wrap: wrap;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card {
   display: flex;
@@ -183,6 +188,11 @@ h2.cursive {
   border: 1px solid #efefef;
   margin: 10px;
   padding: 1em;
+  text-align: center;
+  max-width: 480px;
+  &--family {
+    max-width: 800px;
+  }
   .desc {
     margin: 0;
     font-size: 1.2em;
@@ -197,6 +207,7 @@ h2.cursive {
   }
   h4 {
     margin-top: 15px;
+    text-align: center;
   }
   .img {
     border-radius: 50%;

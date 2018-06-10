@@ -20,21 +20,21 @@
         <span>Menu</span>
       </button>
       <li class="menu__item">
-        <a class="menu__item-link" href="#where">
+        <a class="menu__item-link" data-scroll href="#where">
           Quando e Onde?
         </a>
       </li>
       <li class="menu__item">
-          <a class="menu__item-link" href="#family">Família</a>
-        </li>
-      <li class="menu__item">
-        <a class="menu__item-link" href="#madrinhas">Madrinhas e Padrinhos</a>
+        <a class="menu__item-link" data-scroll href="#family">Família</a>
       </li>
       <li class="menu__item">
-        <a class="menu__item-link" href="#gifts">Presentes</a>
+        <a class="menu__item-link" data-scroll href="#madrinhas">Madrinhas e Padrinhos</a>
       </li>
       <li class="menu__item">
-        <a class="menu__item-link" href="#rsvp">RSVP</a>
+        <a class="menu__item-link" data-scroll href="#gifts">Presentes</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__item-link" data-scroll href="#rsvp">RSVP</a>
       </li>
     </ul>
   </header>
@@ -43,8 +43,8 @@
   <section class="intro">
     <div class="bg">
       <div class="container">
-        <h1>Ricardo &amp; Denise</h1>
-        <h2>22 de setembro de 2018</h2>
+        <h1 class="reveal">Ricardo &amp; Denise</h1>
+        <h2 class="reveal">22 de setembro de 2018</h2>
       </div>
     </div>
   </section>
@@ -52,25 +52,25 @@
     <div class="row">
       <div class="column">
         <section class="title">
-          <h2 class="cursive">Quando e Onde?</h2>
+          <h2 class="cursive reveal">Quando e Onde?</h2>
         </section>
-        <p class="time">
+        <p class="time reveal">
           <strong>Horário:</strong> 19h30</p>
-        <p class="date">
+        <p class="date reveal">
           <strong>Data:</strong> Sábado, 22 de setembro de 2018</p>
         <hr>
-        <p class="name">
+        <p class="name reveal">
           <strong>Local:</strong> Iate Clube do Rio de Janeiro</p>
-        <p class="local">
+        <p class="local reveal">
           <strong>Ceremônia e festa:</strong> Capela do Iate Clube e Salão Marlin Azul</p>
-        <p class="address">
+        <p class="address reveal">
           <strong>Endereço:</strong> Av. Pasteur, 333 - Botafogo/Urca, Rio de Janeiro</p>
         <hr>
       </div>
     </div>
     <div class="row">
       <div class="column">
-        <h2 class="cursive">Mapa</h2>
+        <h2 class="cursive reveal">Mapa</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.934994318946!2d-43.17455868483997!3d-22.952621045278935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99801db3420887%3A0xa575b85ce400c696!2sIate+Clube+do+Rio+de+Janeiro!5e0!3m2!1sen!2sbr!4v1526864311674"
           width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
@@ -80,7 +80,7 @@
     <div class="container">
       <div class="row">
         <div class="column family__column left">
-          <div class="card">
+          <div class="card card--family reveal">
             <img class="family__pic" src="dist/images/naruto.png" width="350" alt="">
             <h4 class="cursive family__title">Família da Noiva</h4>
           </div>
@@ -88,7 +88,7 @@
       </div>
       <div class="row">
         <div class="column family__column right">
-          <div class="card">
+          <div class="card card--family reveal">
             <img class="family__pic" src="dist/images/goldstein.png" width="350" alt="">
             <h4 class="cursive family__title">Família do Noivo</h4>
           </div>
@@ -100,89 +100,105 @@
   <div class="container madrinhas-padrinhos leaves-behind" id="madrinhas">
     <div class="row">
       <div class="column">
-        <h2 class="cursive">Padrinhos e Madrinhas</h2>
+        <h2 class="cursive reveal">Padrinhos e Madrinhas</h2>
       </div>
     </div>
     <div class="card-wrapper">
-      <div class="card marcela">
+      <div class="card marcela reveal">
         <div class="img"></div>
         <h3>Marcela Rockenbach</h3>
-        <p class="desc">Amiga da Noiva e do Noivo</p>
+        <p class="desc">A amiga para todas as horas, não perde uma saída, adora um bom vinho e uma boa conversa para ouvir e dar conselhos.</p>
       </div>
-      <div class="card edinho">
+      <div class="card edinho reveal">
         <div class="img"></div>
         <h3>Edson Feimberg</h3>
-        <p class="desc">Amigo da Noiva e do Noivo</p>
+        <p class="desc">Amigo desde da quarta série, companheiro e confiável. Aquela pessoa que você sabe que terá a amizade para sempre.</p>
       </div>
-      <div class="card lobolf">
+      <div class="card lobolf reveal">
         <div class="img"></div>
         <h3>Luiz Felipe Lobo</h3>
-        <p class="desc">Amigo da Noiva e do Noivo</p>
+        <p class="desc">Amigo dos noivos desde o colegial, considerado um dos melhores amigos do noivo. Cercado de amigos e de uma família
+          incrível. Além disso, é pai da Maria Antônia, a mascote do grupo!</p>
       </div>
-      <div class="card david">
+      <div class="card david reveal">
         <div class="img"></div>
         <h3>David Steagall</h3>
-        <p class="desc">Amigo da Noiva e do Noivo</p>
+        <p class="desc">Amigo dos noivos desde os 16 anos. Um dos amigos mais doidos e animados de todos. Não perde uma oportunidade para
+          levar sua animação à todos que estão a sua volta.</p>
       </div>
-      <div class="card marina">
+      <div class="card marina reveal">
         <div class="img"></div>
         <h3>Marina Funari Kenski</h3>
-        <p class="desc">Prima da Noiva</p>
+        <p class="desc">Prima da noiva, sempre disposta a conversar e contar as histórias mais hilárias. Sempre foi exemplo para a noiva
+          da sua dedicação e comprometimento com a vida pessoal e profissional.</p>
       </div>
-      <div class="card gabriel">
+      <div class="card gabriel reveal">
         <div class="img"></div>
         <h3>Gabriel Kenski</h3>
-        <p class="desc">Primo da Noiva</p>
+        <p class="desc">Junto com a Marina, são os pais da esperta Valentina e do sapeca Miguel. Entusiasta da vida, aquela pessoa com humor
+          certeiro que traz leveza e compartilha inúmeras conquistas.</p>
       </div>
-      <div class="card natalia">
+      <div class="card natalia reveal">
         <div class="img"></div>
         <h3>Natália Mariano</h3>
-        <p class="desc">Prima da Noiva</p>
+        <p class="desc">Faz parte do casal 20! Prima da noiva, compartilha suas histórias do jeito mais engraçado e irreverente, sempre de
+          bem com a vida, leva alegria para todos os lugares que vai e carrega consigo o brilho da simplicidade e o segredo
+          da felicidade!</p>
       </div>
-      <div class="card fernando">
+      <div class="card fernando reveal">
         <div class="img"></div>
         <h3>Fernando Gois</h3>
-        <p class="desc">Primo da Noiva</p>
+        <p class="desc">Junto com a Natália, formam o casal 20 mais animado de todos! Aquela pessoa disponível para todo churrasco e cerveja.
+          Além disso, é o exemplo da família de dedicação nos estudos, grande pai de família e lutador em busca dos seus
+          sonhos!</p>
       </div>
-      <div class="card breno">
+      <div class="card breno reveal">
         <div class="img"></div>
         <h3>Breno Downsley</h3>
-        <p class="desc">Cunhado da Noiva</p>
+        <p class="desc">Cunhado da noiva, a pessoa que sempre está com um sorriso no rosto, trazendo alegria para onde vai e fazendo todo
+          mundo rir e descontrair.</p>
       </div>
-      <div class="card bia">
+      <div class="card bia reveal">
         <div class="img"></div>
         <h3>Beatriz Keiko</h3>
-        <p class="desc">Irmã da Noiva</p>
+        <p class="desc">Irmã da Noiva, companheira, a pessoa com quem a noiva tem a certeza que vai poder contar hoje e sempre! Aquela pessoa
+          que te dá conselhos, compartilha dicas de tudo, conta piadas, planeja viagens, antenada de todas as novidades,
+          sempre interessada, criativa e enfim, pessoa de mil e uma características em um só lugar! </p>
       </div>
-      <div class="card priscila">
+      <div class="card priscila reveal">
         <div class="img"></div>
         <h3>Priscila Mello</h3>
-        <p class="desc">Amiga da Noiva e do Noivo</p>
+        <p class="desc">Amiga dos noivos, namorada do Phillipe. Com personalidade única, sincera e imprevisivelmente engraçada. Aquela pessoa
+          que você consegue conversar sobre tudo sem hesitação durante horas e que faz a diferença onde está.</p>
       </div>
-      <div class="card phil">
+      <div class="card phil reveal">
         <div class="img"></div>
         <h3>Phillipe Maia</h3>
-        <p class="desc">Amigo da Noiva e do Noivo</p>
+        <p class="desc">Amigo dos noivos, namorado da Priscila. Uma pessoa com um coração gigante, amigo que se preocupa, ajuda, apoia e
+          sempre deseja o seu melhor. Aquele amigo para guardar para toda vida.</p>
       </div>
-      <div class="card rafael">
+      <div class="card rafael reveal">
         <div class="img"></div>
         <h3>Rafael Goldstein</h3>
-        <p class="desc">Irmão do Noivo</p>
+        <p class="desc">Irmão do noivo, pai da Lilly. É o mais sensato da família, finge que é sério porém no fundo é uma pessoa que carrega
+          simplicidade e leva alegria para todo lugar que está.</p>
       </div>
-      <div class="card joana">
+      <div class="card joana reveal">
         <div class="img"></div>
         <h3>Joana Ollivier Goldstein</h3>
-        <p class="desc">Cunhada do Noivo</p>
+        <p class="desc">Cunhada do noivo e mãe da Lilly. Aquela pessoa que aparentemente é reservada, mas quando se conhece mais, é um doce
+          de pessoa.</p>
       </div>
-      <div class="card juliana">
+      <div class="card juliana reveal">
         <div class="img"></div>
         <h3>Juliana Lima</h3>
-        <p class="desc">Cunhada do Noivo</p>
+        <p class="desc">Cunhada do noivo, mãe da Helena e da Mel. Pessoa com uma simpatia cativante, que traz humildade e é exemplo de pessoa.</p>
       </div>
-      <div class="card brunno">
+      <div class="card brunno reveal">
         <div class="img"></div>
         <h3>Brunno Goldstein</h3>
-        <p class="desc">Irmão do Noivo</p>
+        <p class="desc">Irmão do noivo, pai coruja da Helena e da Mel. Aquela pessoa que se preocupa com os outros, é bondoso, gente boa
+          e gentil.</p>
       </div>
     </div>
   </div>
@@ -190,90 +206,163 @@
   <div id="gifts" class="container gifts leaves-behind">
     <div class="row">
       <div class="column">
-        <h2 class="cursive">Presentes</h2>
+        <h2 class="cursive reveal">Presentes</h2>
+        <p class="subtitle reveal">Nossa lua de mel será na Itália! Faça parte desse momento especial nos ajudando com os passeios.</p>
       </div>
     </div>
-    <div class="row">
+    <div class="row reveal">
       <div class="column pay-anything">
-        <p>Se quiser poder escolher qualquer valor!</p>
-        <a href="https://pag.ae/bmx7SX2" class="button button--green-outline">
+        <p>Se quiser pode escolher qualquer valor!</p>
+        <a href="https://pag.ae/bmx7SX2" target="_blank" class="button button--green-outline">
           Escolher valor!
         </a>
       </div>
     </div>
     <div class="row">
       <ul class="card-wrapper">
-        <li class="card">
-          <img src="dist/images/italia.jpg" width="350" alt="">
-          <h4>Viagem para Itália</h4>
+        <li class="card reveal">
+          <img src="dist/images/pizza.jpg" width="350" alt="">
+          <h4>Pizza na melhor pizzaria de Roma</h4>
           <p>
             R$50,00
           </p>
-          <a href="https://pag.ae/bgyJ1QN" class="button button--green-outline">Dar presente!</a>
+          <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+          <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+            <input type="hidden" name="code" value="F77C6E1AA0A017322451CFB4A72483D9" />
+            <input type="hidden" name="iot" value="button" />
+            <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/120x53-comprar.gif" name="submit"
+              alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+          </form>
+          <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+          <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
         </li>
-        <li class="card">
-          <img src="dist/images/italia.jpg" width="350" alt="">
-          <h4>Viagem para Itália</h4>
+        <li class="card reveal">
+          <img src="dist/images/hand.jpg" width="350" alt="">
+          <h4>Curso de italiano fluente</h4>
           <p>
             R$100,00
           </p>
-          <a href="https://pag.ae/bgyJ1QN" class="button button--green-outline">Dar presente!</a>
+          <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+          <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+            <input type="hidden" name="code" value="212052CF6565A74BB457BF9A8A2CC50C" />
+            <input type="hidden" name="iot" value="button" />
+            <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/120x53-comprar.gif" name="submit"
+              alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+          </form>
+          <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+          <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
         </li>
-        <li class="card">
-          <img src="dist/images/italia.jpg" width="350" alt="">
-          <h4>Viagem para Itália</h4>
+        <li class="card reveal">
+          <img src="dist/images/dvd.jpg" width="350" alt="">
+          <h4>Materiais de estudo sobre a cultura italiana</h4>
           <p>
             R$150,00
           </p>
-          <a href="https://pag.ae/bgyJ1QN" class="button button--green-outline">Dar presente!</a>
+          <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+          <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+            <input type="hidden" name="code" value="832BE2330707F40DD42F5FBB388F8BEF" />
+            <input type="hidden" name="iot" value="button" />
+            <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/120x53-comprar.gif" name="submit"
+              alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+          </form>
+          <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+          <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
         </li>
-        <li class="card">
-          <img src="dist/images/italia.jpg" width="350" alt="">
-          <h4>Viagem para Itália</h4>
+        <li class="card reveal">
+          <img src="dist/images/panela.webp" width="350" alt="">
+          <h4>Conjunto de panelas antiaderente</h4>
           <p>
             R$250,00
           </p>
-          <a href="https://pag.ae/bgyJ1QN" class="button button--green-outline">Dar presente!</a>
+          <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+          <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+            <input type="hidden" name="code" value="E88AC422C1C1D38774BD9FA106BB1E1B" />
+            <input type="hidden" name="iot" value="button" />
+            <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/120x53-comprar.gif" name="submit"
+              alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+          </form>
+          <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+          <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
         </li>
-        <li class="card">
-          <img src="dist/images/italia.jpg" width="350" alt="">
-          <h4>Viagem para Itália</h4>
+        <li class="card reveal">
+          <img src="dist/images/mergulho.jpg" width="350" alt="">
+          <h4>Mergulho na Fontana di Trevi</h4>
           <p>
             R$300,00
           </p>
-          <a href="https://pag.ae/bgyJ1QN" class="button button--green-outline">Dar presente!</a>
+          <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+          <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+            <input type="hidden" name="code" value="390F9A32C0C0C76DD4AA4F85D8876C6D" />
+            <input type="hidden" name="iot" value="button" />
+            <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/120x53-comprar.gif" name="submit"
+              alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+          </form>
+          <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+          <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
         </li>
-        <li class="card">
-          <img src="dist/images/italia.jpg" width="350" alt="">
-          <h4>Viagem para Itália</h4>
+        <li class="card reveal">
+          <img src="dist/images/pisa.jpg" width="350" alt="">
+          <h4>Câmera para tirar foto de pessoas segurando a Torre de Pisa</h4>
           <p>
             R$500,00
           </p>
-          <a href="https://pag.ae/bgyJ1QN" class="button button--green-outline">Dar presente!</a>
+          <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+          <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+            <input type="hidden" name="code" value="B301FD8620200E6114A31FBC8F616C49" />
+            <input type="hidden" name="iot" value="button" />
+            <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/120x53-comprar.gif" name="submit"
+              alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+          </form>
+          <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+          <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
         </li>
-        <li class="card">
-          <img src="dist/images/italia.jpg" width="350" alt="">
-          <h4>Viagem para Itália</h4>
+        <li class="card reveal">
+          <img src="dist/images/luta-coliseu.jpg" width="350" alt="">
+          <h4>Luta no coliseu com roupa temática</h4>
           <p>
             R$1.000,00
           </p>
-          <a href="https://pag.ae/bgyJ1QN" class="button button--green-outline">Dar presente!</a>
+          <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+          <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+            <input type="hidden" name="code" value="16471524DEDE975DD4FE1F9AA08CE3CE" />
+            <input type="hidden" name="iot" value="button" />
+            <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/120x53-comprar.gif" name="submit"
+              alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+          </form>
+          <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+          <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
         </li>
-        <li class="card">
+        <li class="card reveal">
           <img src="dist/images/italia.jpg" width="350" alt="">
           <h4>Viagem para Itália</h4>
           <p>
             R$2.500,00
           </p>
-          <a href="https://pag.ae/bgyJ1QN" class="button button--green-outline">Dar presente!</a>
+          <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+          <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+            <input type="hidden" name="code" value="7A94B68D7F7FEC1AA4CACFB1A5FF49C5" />
+            <input type="hidden" name="iot" value="button" />
+            <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/120x53-comprar.gif" name="submit"
+              alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+          </form>
+          <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+          <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
         </li>
       </ul>
     </div>
   </div>
   <div class="row">
-    <div class="column pay-anything">
-      <p>Se quiser poder escolher qualquer valor!</p>
-      <a href="https://pag.ae/bmx7SX2" class="button button--green-outline">
+    <div class="column pay-anything reveal">
+      <p>Se quiser pode escolher qualquer valor!</p>
+      <a href="https://pag.ae/bmx7SX2" target="_blank" class="button button--green-outline">
         Escolher valor!
       </a>
     </div>
@@ -281,8 +370,8 @@
   <hr>
   <section class="rsvp" id="rsvp">
     <div class="container leaves-behind">
-      <form netlify name="RSVP" method="POST" netlify-honeypot="bot-field" class="js-rsvp card">
-        <h2>RSVP</h2>
+      <form netlify name="RSVP" method="POST" netlify-honeypot="bot-field" class="js-rsvp card reveal">
+        <h2 class="reveal">RSVP</h2>
         <p style="display: none;">
           <label>Don’t fill this out if you're human:
             <input name="bot-field">
@@ -341,6 +430,8 @@
       </form>
     </div>
   </section>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
   <script src="dist/js/app.min.js"></script>
 </body>
