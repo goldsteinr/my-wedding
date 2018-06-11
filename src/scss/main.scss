@@ -175,6 +175,15 @@ h2.cursive {
   justify-content: center;
   align-items: center;
 }
+.banking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h6 {
+    margin-bottom: 5px;
+  }
+}
 .card {
   display: flex;
   flex: 1;
