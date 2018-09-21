@@ -33,9 +33,6 @@
       <li class="menu__item">
         <a class="menu__item-link" data-scroll href="#gifts">Presentes</a>
       </li>
-      <li class="menu__item">
-        <a class="menu__item-link" data-scroll href="#rsvp">Confirmar presença</a>
-      </li>
     </ul>
   </header>
   <img class="top-leaves" src="/dist/images/folhas.png" alt="">
@@ -363,38 +360,6 @@
       </ul>
     </div>
   </div>
-  <hr>
-  <section class="rsvp" id="rsvp">
-    <div class="container leaves-behind">
-      <h2 class="cursive">Confirme sua presença!</h2>
-      <form netlify name="RSVP" method="POST" netlify-honeypot="bot-field" class="js-rsvp card reveal">
-        <h2 class="reveal">RSVP</h2>
-        <p style="display: none;">
-          <label>Don’t fill this out if you're human:
-            <input name="bot-field">
-          </label>
-        </p>
-        <div class="row">
-          <div class="column">
-            <input name="Nome" type="text" placeholder="Nome" required>
-          </div>
-          <div class="column">
-            <input name="Sobrenome" type="text" placeholder="Sobrenome" required>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <textarea name="Mensagem" type="text" placeholder="Mensagem ao noivos" cols="30" rows="10"></textarea>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <button type="submit" class="rsvp-button button--green">Confirmar presença!</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </section>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34092550-2"></script>
 <script>
